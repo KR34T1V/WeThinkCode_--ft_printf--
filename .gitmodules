@@ -1,0 +1,3 @@
+[submodule "lib/libft"]
+	path = lib/libft
+	url = https://github.com/M4DM0NK3Y/WeThinkCode_--libft--.git
