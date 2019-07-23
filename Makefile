@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: cterblan <cterblan@student.wethinkcode>    +#+  +:+       +#+         #
+#    By: cterblan <cterblan@students.wethinkcode    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/07/17 11:24:40 by cterblan          #+#    #+#              #
-#    Updated: 2018/08/25 15:48:08 by cterblan         ###   ########.fr        #
+#    Updated: 2019/07/23 22:03:43 by cterblan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -95,7 +95,7 @@ CC := gcc $(CFLAGS)
 #								RULES
 ################################################################################
 
-all: $(NAME)
+all: $(NAME) clone
 
 $(NAME): $(OBJ)
 	@make all -C $(LIBFT_DIR)/
@@ -114,6 +114,8 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	@$(CC) -I $(INC_DIR) -o $@ -c $<
 	@echo "\033[33m\t\t[SUCCESS]\033[0m"
 	@#DON'T TOUCH ^^^
+clone:
+	@git submodule update --init --recursive
 
 clean: cleanlib
 	@echo "\033[31m\t\t[CLEANING]\t$(OBJ_DIR)\033[0m"
