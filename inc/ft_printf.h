@@ -3,20 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cterblan <cterblan@student.wethinkcode>    +#+  +:+       +#+        */
+/*   By: cterblan <cterblan@students.wethinkcode    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/19 07:48:29 by cterblan          #+#    #+#             */
-/*   Updated: 2018/08/25 15:46:25 by cterblan         ###   ########.fr       */
+/*   Updated: 2019/07/23 21:53:40 by cterblan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include "../lib/libft/inc/libft.h"
-# include <stdarg.h>
-# include <inttypes.h>
-# include <wchar.h>
+# include "./ft_printf_private_includes.h"
 
 # define FLAGS "hljz#0-+ ."
 # define VALID "cCdDioOpsSuUxX\%"
@@ -39,8 +36,6 @@ typedef struct	s_data
 	int			pre;
 	int			pw;
 }				t_data;
-
-int				ft_printf(char *str, ...);
 
 void			ft_quit(char *str);
 void			ft_check_conv(char *str, va_list list, t_data *d);

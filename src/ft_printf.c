@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cterblan <cterblan@student.wethinkcode>    +#+  +:+       +#+        */
+/*   By: cterblan <cterblan@students.wethinkcode    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/19 07:59:57 by cterblan          #+#    #+#             */
-/*   Updated: 2018/08/25 15:17:14 by cterblan         ###   ########.fr       */
+/*   Updated: 2019/07/23 21:55:32 by cterblan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/ft_printf.h"
+#include "../inc/ft_printf.h"
+#include "../inc/export_ft_printf.h"
 
 int		ft_printf(char *str, ...)
 {
