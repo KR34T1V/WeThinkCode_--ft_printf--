@@ -6,7 +6,7 @@
 #    By: cterblan <cterblan@students.wethinkcode    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/07/17 11:24:40 by cterblan          #+#    #+#              #
-#    Updated: 2019/07/23 22:57:53 by cterblan         ###   ########.fr        #
+#    Updated: 2019/07/23 23:34:57 by cterblan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -95,7 +95,7 @@ CC := gcc $(CFLAGS)
 #								RULES
 ################################################################################
 
-all: $(NAME) update
+all: update $(NAME)
 
 $(NAME): $(OBJ)
 	@make all -C $(LIBFT_DIR)/
@@ -138,7 +138,7 @@ fcleanlib:
 re: fclean all
 
 update:
-	git submodule update --recursive --remote
+	git submodule update --init --recursive --remote
 	
 workspace:
 	@echo "\033[36m\t\t[Building $@]\033[0m"

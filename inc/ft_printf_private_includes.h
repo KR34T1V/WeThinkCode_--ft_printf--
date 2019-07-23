@@ -4,6 +4,7 @@
 # include <stdarg.h>
 # include <inttypes.h>
 # include <wchar.h>
+# include <stdlib.h>
 # include "../lib/libft/inc/libft.h"
 
 #endif
