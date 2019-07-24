@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: cterblan <cterblan@students.wethinkcode    +#+  +:+       +#+         #
+#    By: cterblan <cterblan@student>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/07/17 11:24:40 by cterblan          #+#    #+#              #
-#    Updated: 2019/07/23 23:34:57 by cterblan         ###   ########.fr        #
+#    Updated: 2019/07/24 12:22:44 by cterblan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,9 +41,6 @@ SRC :=	ft_printf.c\
 		ft_quit.c\
 		ft_lltoa_flag.c\
 		ft_ulltoa.c\
-		ft_putwchar.c\
-		ft_putwstr.c\
-		ft_wstrlen.c\
 		ft_print_loose.c\
 		ft_i_handler.c\
 		ft_print_i.c\
