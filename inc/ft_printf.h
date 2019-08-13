@@ -6,7 +6,7 @@
 /*   By: cterblan <cterblan@students.wethinkcode    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/19 07:48:29 by cterblan          #+#    #+#             */
-/*   Updated: 2019/07/23 21:53:40 by cterblan         ###   ########.fr       */
+/*   Updated: 2019/08/13 10:07:28 by cterblan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define FT_PRINTF_H
 
 # include "./ft_printf_private_includes.h"
+# include "./export_ft_printf.h"
 
 # define FLAGS "hljz#0-+ ."
 # define VALID "cCdDioOpsSuUxX\%"

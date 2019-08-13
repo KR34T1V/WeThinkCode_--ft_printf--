@@ -6,7 +6,7 @@
 #    By: cterblan <cterblan@student>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/07/17 11:24:40 by cterblan          #+#    #+#              #
-#    Updated: 2019/07/24 12:22:44 by cterblan         ###   ########.fr        #
+#    Updated: 2019/08/13 10:05:19 by cterblan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -99,7 +99,7 @@ $(NAME): $(OBJ)
 	@echo "\033[35m\t\t[COMPILING] $@\033"
 	@#$(CC) -o $@ -I $(INC_DIR) -L $(LIBFT_DIR)/ $(LIB_FLAG) $(OBJ)
 	@#COMPILE EXECUTABLE ^^^^^^
-	@ar rcs $(NAME) $(OBJ) $(LIBFT_DIR)/obj/*.o
+	@ar rcs $(NAME) $(OBJ) $(LIBFT_DIR)/obj/*
 	@#COMPILE LIBRARY ^^^^^^^
 	@echo "\033[32m\t\t[COMPILED SUCCESSFULLY]\033"
 	@#DON'T TOUCH ^^^
