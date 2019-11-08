@@ -1,9 +1,6 @@
 # WeThinkCode_--ft_printf--
 Recreating the traditional printf() function
 
-ft_pintf is a project from the WeThinkCode curriculum. The purpose of the project is to recreate the traditional printf
-with this function written in C.
-
 ### FEATURES
 ###### Ability to print multiple types of data. (eg. intergers, characters, pointers, decimals, ...)
 ###### Ability to add padding to printed text.
